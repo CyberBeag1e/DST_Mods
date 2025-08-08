@@ -4,6 +4,6 @@ When you tend to your crops, you are never talk to lifeless plants. Instead, the
 
 Based on the character you are playing, their words would differ. 
 
-Search for the mod on DST Steam Workshop and click subscribe!
+Search for the mod on [DST Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3544885118) and click subscribe!
 
 If you want to customize the lines, add/change something in `/scripts/thank_you_lines_EN.lua`.
