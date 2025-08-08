@@ -1,0 +1,9 @@
+## Don't Starve Together Mod: Thankful Plants
+
+When you tend to your crops, you are never talk to lifeless plants. Instead, they become your friends and will express their gratitude to you.
+
+Based on the character you are playing, their words would differ. 
+
+Search for the mod on DST Steam Workshop and click subscribe!
+
+If you want to customize the lines, add/change something in `/scripts/thank_you_lines_EN.lua`.
