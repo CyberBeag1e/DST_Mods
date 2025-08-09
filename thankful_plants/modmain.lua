@@ -5,8 +5,9 @@ local FONT_SIZE   = GetModConfigData("font_size")
 local SPEECH_TIME = GetModConfigData("speech_time")
 local SANITY_GAIN = 1
 local SAY_CHANCE  = GetModConfigData("say_chance")
+local LANGUAGE    = GetModConfigData("language")
 
-local THANK_YOU_TEXT = GLOBAL.require "thank_you_lines_EN"
+local THANK_YOU_TEXT = GLOBAL.require "thank_you_lines"
 
 local log = function(...)
     if DEBUG then print("[ThankfulPlant]", ...) end
@@ -49,7 +50,7 @@ AddComponentPostInit("farmplanttendable", function(self)
         talker.no_speech_sound  = true
         
         local char = doer and doer.prefab or "_default"
-        local bank = THANK_YOU_TEXT[char] or THANK_YOU_TEXT._default
+        local bank = THANK_YOU_TEXT[char][LANGUAGE] or THANK_YOU_TEXT._default[LANGUAGE]
         local line = bank[math.random(#bank)]
 
         plant:DoTaskInTime(1, function()
