@@ -1,7 +1,7 @@
 name = "Thankful Plants"
 description = "When you tend to a plant, it expresses its gratitude."
 author = "CyberBeagle"
-version = "1.3"
+version = "1.4"
 
 dst_compatible          = true
 all_clients_require_mod = false
@@ -22,7 +22,7 @@ configuration_options = {
             {description = "36", data = 36},
             {description = "40", data = 40},
         },
-        default = 32,
+        default = 36,
     },
 
     {
@@ -52,4 +52,15 @@ configuration_options = {
         },
         default = 0.70,
     },
+
+    {
+        name  = "language",
+        label = "Language",
+        hover = "Language of thank-you lines.",
+        options = {
+            {description = "English", data = "EN"},
+            {description = "简体中文", data = "ZH"},
+        },
+        default = "EN"
+    }
 }
